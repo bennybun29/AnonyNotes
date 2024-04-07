@@ -1,0 +1,365 @@
+/* Body */
+body {
+   margin: 0%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   overflow-x: hidden;
+}
+
+.header {
+   background-color: black;
+   color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   padding: 0 20px; 
+   max-width: 100%;
+}
+
+.header a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+}
+
+.header a:hover{
+   cursor: pointer;
+}
+.header .anony {
+   font-family: "Oswald", sans-serif;
+   font-weight: 350;
+   font-size: 4rem;
+}
+
+.header .notes {
+   font-family: "PT Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 4rem;
+   margin: 0;
+}
+
+.header img {
+   width: 60px;
+   height: auto;
+   object-fit: cover;
+}
+
+@media screen and (min-width: 768px){
+   .header {
+       display:flex;
+       flex-wrap: wrap;
+   }
+
+   .header .anony {
+       font-family: "Oswald", sans-serif;
+       font-weight: 350;
+       font-size: 1rem;
+   }
+   
+   .header .notes {
+       font-family: "PT Serif", serif;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 1rem;
+       margin: 0;
+   }
+   
+}
+
+@media only screen and (max-width: 600px) {
+   .header {
+       padding: 0 10px; /* reduce padding for smaller screens */
+   }
+
+   .header img {
+       display: none; /* hide the image on smaller screens */
+   }
+
+   .header .anony {
+       font-size: 10px; /* reduce font size for smaller screens */
+   }
+
+   .header .notes {
+       font-size: 10px; /* reduce font size for smaller screens */
+   }
+}
+
+@media only screen and (max-width: 650px) {
+   .header {
+       padding: 0 10px; /* reduce padding for smaller screens */
+   }
+
+   .header img {
+       display: none; /* hide the image on smaller screens */
+   }
+
+   .header .anony {
+       font-size: 12px; /* reduce font size for smaller screens */
+   }
+
+   .header .notes {
+       font-size: 12px; /* reduce font size for smaller screens */
+   }
+}
+
+@media only screen and (max-width: 420px) {
+   .header {
+       padding: 0 10px; /* reduce padding for smaller screens */
+   }
+
+   .header img {
+       display: none; /* hide the image on smaller screens */
+   }
+
+   .header .anony {
+       font-size: 7px; /* reduce font size for smaller screens */
+   }
+
+   .header .notes {
+       font-size: 7px; /* reduce font size for smaller screens */
+   }
+}
+
+/*Subheader*/
+.subheader{
+   display: flex;
+   align-content:stretch;
+   align-items: center;
+   padding: 0 20px; 
+   max-width: 100%;
+   font-family: "Oswald", sans-serif;
+   font-weight: 500;
+}
+
+.subheader a {
+   text-decoration: none;
+   color: hsl(0, 2%, 49%);
+   transition: 800ms;
+   border-radius: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   
+}
+
+.subheader a:hover{
+   cursor: pointer;
+   color: rgb(255, 255, 255);   
+}
+
+@media only screen and (max-width: 768px) {
+   .header {
+      font-size: 15px;
+      padding: 10px;
+   }
+
+   .subheader a {
+      font-size: 11px;
+   }
+
+   .heads strong {
+      margin: 7px;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .header {
+      font-size: 15px;
+      padding: 10px;
+   }
+
+   .subheader a {
+      font-size: 11px;
+   }
+
+   .heads strong {
+      margin: 7px;
+   }
+} 
+
+/*  */
+.aboutbanner{
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.aboutimg{
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+hr{
+   border: 1px solid rgb(179, 179, 179);
+   width: 100%;
+}
+
+/* Middle Content */
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ 
+.heads {
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-weight: 350;
+   text-align: center;
+}
+
+.paragraph {
+   text-align: center;
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-size: 20px;
+   font-weight: 250;
+   margin: 20%;
+   margin-top: 0;
+   margin-bottom: 15px;
+}
+
+.center h1 {
+   color: black;
+   font-size: 3rem;
+   text-align: center;
+   font-family: "Oswald", sans-serif;
+   font-weight: 900;
+   font-style:normal;
+   margin-top: 0;
+}
+
+.box {
+   padding: 16px;
+   border-radius: 15px;
+   transition: all .38s ease;
+   width: 100px;
+   margin: 10px;
+}
+
+.box img{
+   width: 100px;
+   border-radius: 10px;
+   transition: 700ms;
+}
+
+.box img:hover{
+   transform: scale(1.3);
+   box-shadow: 5px 5px 10px rgb(204, 204, 204);
+}
+
+.box h3 {
+   font-size: 20px;
+   font-weight: 400;
+   color: rgb(0, 0, 0);
+   margin-bottom: 8px;
+   font-family: "Oswald", sans-serif;
+   text-align: center;
+}
+
+.box h5 {
+   font-size: 15px;
+   font-weight: 300;
+   color: rgb(0, 0, 0);
+   margin-bottom: 15px;
+   letter-spacing: 2px;
+   font-family: "Oswald", sans-serif;
+   text-align: center;
+}
+
+.team-content{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 0;
+}
+
+.icon {
+   text-align: center;
+}
+.icon i{
+   display: inline-block;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   margin: 0 8px;
+   transition: all .38s ease;
+}
+
+.icon i:hover {
+   transform: scale(1.2);
+}
+
+@media(max-width: 1240px){
+   .team{
+       width: 100%;
+       height: auto;
+       padding: 90px 2%;  
+   }
+   .center h1 {
+       font-size: 3.2rem;
+   }
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+   bottom: 0;
+   max-width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   font-family: "Oswald", sans-serif;
+   font-weight: 300;
+   font-size: 1rem;
+}
+
+
+footer a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+}
+
+footer a:hover{
+   cursor: pointer;
+}
+
+footer .anony {
+   font-family: "Oswald", sans-serif;
+   font-weight: 350;
+   font-size: 1rem;
+}
+
+footer .notes {
+   font-family: "PT Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1rem;
+   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+   .container {
+       flex-direction: row;
+       align-items: center;
+   }
+
+   .img1 img {
+       max-width: 50%;
+   }
+
+   .buttons {
+       margin-left: 20px;
+   }
+}

@@ -1,0 +1,285 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/*header*/
+.header {
+   background-color: black;
+   color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   padding: 0 20px; 
+   max-width: 100%;
+}
+
+.header a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+}
+
+.header a:hover{
+   cursor: pointer;
+}
+.header .anony {
+   font-family: "Oswald", sans-serif;
+   font-weight: 350;
+   font-size: 4rem;
+}
+
+.header .notes {
+   font-family: "PT Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 4rem;
+   margin: 0;
+}
+
+.header img {
+   width: 60px;
+   height: auto;
+   object-fit: cover;
+}
+
+@media screen and (min-width: 768px){
+   .header {
+       display:flex;
+       flex-wrap: wrap;
+   }
+
+   .header .anony {
+       font-family: "Oswald", sans-serif;
+       font-weight: 350;
+       font-size: 1rem;
+   }
+   
+   .header .notes {
+       font-family: "PT Serif", serif;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 1rem;
+       margin: 0;
+   }
+   
+}
+
+@media only screen and (max-width: 600px) {
+   .header {
+       padding: 0 10px; /* reduce padding for smaller screens */
+   }
+
+   .header img {
+       display: none; /* hide the image on smaller screens */
+   }
+
+   .header .anony {
+       font-size: 10px; /* reduce font size for smaller screens */
+   }
+
+   .header .notes {
+       font-size: 10px; /* reduce font size for smaller screens */
+   }
+}
+
+@media only screen and (max-width: 650px) {
+   .header {
+       padding: 0 10px; /* reduce padding for smaller screens */
+   }
+
+   .header img {
+       display: none; /* hide the image on smaller screens */
+   }
+
+   .header .anony {
+       font-size: 15px; /* reduce font size for smaller screens */
+   }
+
+   .header .notes {
+       font-size: 15px; /* reduce font size for smaller screens */
+   }
+}
+
+@media only screen and (max-width: 426px) {
+   .header {
+       padding: 0 10px; /* reduce padding for smaller screens */
+   }
+
+   .header img {
+       display: none; /* hide the image on smaller screens */
+   }
+
+   .header .anony {
+       font-size: 12px; /* reduce font size for smaller screens */
+   }
+
+   .header .notes {
+       font-size: 12px; /* reduce font size for smaller screens */
+   }
+}
+
+/*Subheader*/
+.subheader{
+   display: flex;
+   align-content:stretch;
+   align-items: center;
+   padding: 0 20px; 
+   max-width: 100%;
+   font-family: "Oswald", sans-serif;
+   font-weight: 500;
+}
+
+.subheader a {
+   text-decoration: none;
+   color: hsl(0, 2%, 49%);
+   transition: 800ms;
+   border-radius: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   
+}
+
+.subheader a:hover{
+   cursor: pointer;
+   color: rgb(255, 255, 255);   
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+       font-size: 15px;
+       padding: 10px;
+    }
+ 
+    .subheader a {
+       font-size: 11px;
+    }
+ }
+ 
+ @media only screen and (max-width: 480px) {
+    .header {
+       font-size: 15px;
+       padding: 10px;
+    }
+ 
+    .subheader a {
+       font-size: 11px;
+    }
+ }
+.contactbanner{
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Contact Elements */
+.container{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+.contact.us{
+    margin-top: 70px;
+
+}
+.contact h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+.service{
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    padding: 30px 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    padding: 75px;
+}
+
+.service p{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+.service:hover{
+    background-color: #f0f0f0;
+    box-shadow: 3px 3px 10px grey;
+    border-radius: 10px;
+}
+.service i{
+    font-size: 54px;
+}
+.service h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+p a {
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }  
+}
+
+
+footer {
+   bottom: 0;
+   max-width: 100%;
+   margin-top: 115px;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   font-family: "Oswald", sans-serif;
+   font-weight: 300;
+   font-size: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+ 
+footer a:hover{
+    cursor: pointer;
+}
+ 
+footer .anony {
+    font-family: "Oswald", sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+}
+ 
+footer .notes {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0;
+}
+ 
+@media screen and (min-width: 768px) {
+   .container {
+       flex-direction: row;
+       align-items: center;
+   }
+
+   .img1 img {
+       max-width: 50%;
+   }
+
+   .buttons {
+       margin-left: 20px;
+   }
+}

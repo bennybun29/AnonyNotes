@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="write.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Pacifico&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/ffa1ee83aa.js" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+   <title>Write Note</title>
+</head>
+<body>
+   
+
+         <!-- Header -->
+   <div class="header">
+         <a class="logo" href="AnonyNotes.html" target="_self">
+            <h1 class="anony">Anony<i class="notes">N</i><i class="fa-solid fa-eye-slash" style="color: #ffffff;"></i
+                ><i class="notes">TES</i></h1>
+            </a>
+    
+         <div class="subheader">
+            <a href="write.html">Write Note</a>
+            <a href="browse.html">Browse Notes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+         </div>
+    
+      <img src="/images/question.png" alt="error">
+   </div>
+
+      <!-- Writing Area -->
+   <div class="writeBanner">
+      <img src="/images/writebanner.png
+      " alt="error">
+   </div>
+   <div class="nameContainer">
+      <div class="profile">
+         <img src="/images/profile.png" alt="error">
+      </div>
+
+
+   <form action="browse.html" onsubmit="saveNote(event)">
+
+         <div class="name">
+            <input type="text" maxlength="20" required placeholder="Anonymous Name">
+         </div>
+      </div>
+
+      <div class="noteMaking">
+         <textarea id="textarea" name="Note" id="Note" cols="60" rows="7" maxlength="500" placeholder="Anonymous Note"></textarea>
+      </div>
+
+      <div class="submit-btn">
+         <a href="browse.html">
+            <button value="submit">Submit</button>
+         </a>
+      </div>   
+   </form>
+
+   <footer>
+      <div class="footer-logo">
+         <a href="AnonyNotes.html">
+          <h1 class="anony">Anony<i class="notes">N</i><i class="fa-solid fa-eye-slash" style="color: #ffffff;"></i
+              ><i class="notes">TES</i></h1>
+         </a>
+              <p class="quote">Your Notes, Your Thoughts.</p>
+      </div>
+      
+      <div class="links">
+          <h4>USEFUL LINKS</h4>
+          <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </footer>
+
+</body>
+</html>
