@@ -232,7 +232,114 @@ p a {
     }  
 }
 
+/* Rating */
+:root {
+    --yellow: #ffbd13;
+    --blue: #4383ff;
+    --blue-d-1: #3278ff;
+    --light: #f5f5f5;
+    --grey: #fff;
+    --shadow: 8px 8px 30px rgba(0,0,0,.05);
+}
 
+.wrapper {
+    background: var(--white);
+    justify-content: center;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.wrapper header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2rem;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
+.rating .star {
+    cursor: pointer;
+}
+.rating .star.active {
+    opacity: 0;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.rating .star:hover {
+    transform: scale(1.1);
+}
+
+.btn-group .btn {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 500;
+}
+.btn-group .btn.submit {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.btn-group .btn.submit:hover {
+    background: rgba(rgb(255, 255, 255));
+}
+
+@media screen and (max-width: 768px) {
+    .btn-group .btn.submit  {
+        display: block;
+        margin: 10px auto; /* Center the buttons */
+    }
+
+    .wrapper {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    .wrapper header {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: .5rem;
+        font-size: 2rem;
+        color: var(--yellow);
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+/* Footer */
 footer {
    bottom: 0;
    max-width: 100%;
