@@ -169,6 +169,9 @@ body{
 .writeBanner{
    text-align: center;
    margin-top: 2rem;
+}
+
+.writeBanner img{
    max-width: 100%;
 }
 
@@ -176,7 +179,6 @@ body{
    .writeBanner{
       text-align: center;
       margin-top: 2rem;
-      width: 10px;
    }
 
    body{
