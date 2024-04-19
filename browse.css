@@ -449,9 +449,25 @@ li a {
    }
 }  
 
+/* eto yung nadagdag*/
 @media only screen and (width < 601) {
     .footer-logo .anony {
         justify-content: left;
 
     }
 }
+
+@media only screen and (max-width: 469px) {
+    .notes .note-box{
+       width: 100px;
+       margin-left: 23px;
+   }
+ 
+   .top-note{
+    margin-left: 100px;
+   }
+ 
+   .browsebanner img{
+    width: 300px;
+   }
+ }

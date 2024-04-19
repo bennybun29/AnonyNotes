@@ -247,7 +247,7 @@ body{
    display: flex;
    justify-content: center;
    margin-top: 15px;
-   margin-bottom: 3rem;
+   margin-bottom: 4.7rem;
    margin-top: 2rem;
 }
 
@@ -415,4 +415,20 @@ color: white;
       justify-content: left;
 
   }
+}
+
+@media only screen and (max-width: 367px) {
+   .writeBanner img{
+      width: 300px;
+   }
+
+
+   .profile img{
+      max-width: 100%;
+      margin-left: 5px;
+      margin-top: 20px;
+   }
+   .noteMaking{
+      resize: auto;
+   }
 }

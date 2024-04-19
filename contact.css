@@ -172,7 +172,7 @@ body{
     text-align: center;
     margin-top: 2rem;
     max-width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 /* Contact Elements */
@@ -182,10 +182,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.contact.us{
-    margin-top: 70px;
 
-}
 .contact h1{
     text-transform: uppercase;
     font-size: 50px;
@@ -247,14 +244,13 @@ p a {
     justify-content: center;
     width: 100%;
     border-radius: .75rem;
-    box-shadow: var(--shadow);
     text-align: center;
 }
 
 .wrapper header {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .rating {
