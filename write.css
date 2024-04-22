@@ -275,98 +275,107 @@ body{
 
 a {
    text-decoration: none;
+   color: white;
 }  /*footer*/
+
 footer {
- bottom: 0;
- left: 0;
- max-width: 100%;
- max-height: fit-content;
- background-color: black;
- color: white;
- padding: 5px;
- margin-left: 5px;
- margin-right: 5px;
- border-radius: 5px;
- display: flex;
- flex-wrap: wrap;
- margin-top:4%;
- margin-bottom: -20px;
+   max-width: 100%;
+   max-height: fit-content;
+   background-color: black;
+   color: white;
+   padding: 5px 8px 5px 8px;
+   display: flex;
+   flex-wrap: wrap;
+   margin-top:4%;
+   margin-bottom: -20px;
 }
 
 footer p {
-text-decoration: none;
-font-family: "Oswald", sans-serif;
-font-optical-sizing: auto;
-font-style: normal;
-font-weight: 100;
-display: block;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100;
+  display: block;
 }
 
 .links {
-text-align: right;
-margin-left: auto;
+  text-align: right;
+  margin-left: auto;
+  height: 80px;
 }
 
 .links h4 {
-text-decoration: none;
-font-family: "Oswald", sans-serif;
-font-optical-sizing: auto;
-font-style: normal;
-font-weight: 400;
-margin-bottom: 0;
-margin-top: 3px;
-padding-bottom: 0;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 3px;
+  padding-bottom: 0;
 }
 
 ul{
-margin-top: 3px;
+  margin-top: 3px;
 }
 
 li{
-text-decoration: none;
-font-family: "Oswald", sans-serif;
-font-optical-sizing: auto;
-font-style: normal;
-font-weight: 250;
-list-style: none;
-text-decoration: none;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 250;
+  list-style: none;
+  text-decoration: none;
 }
 
 li a{
-   text-decoration: none;
+     text-decoration: none;
 }
 
 li a:hover{
- text-decoration: underline;
-}
+   text-decoration: underline;
+ }
 
 li a {
-color: white;
+  color: white;
 }
 
 .footer-logo {
- display: block;
+   display: block;
+   height: 80px;
 }
 .footer-logo .anony {
- font-family: "Oswald", sans-serif;
- font-optical-sizing: auto;
- font-style: normal;
- font-weight: 350;
- font-size: large;
- text-align: left;
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-weight: 350;
+   font-size: large;
+   text-align: left;
 }
 
 .footer-logo .notes {
- font-family: "PT Serif", serif;
- font-weight: 400;
- font-style: normal;
- font-size: large;
- text-align: left;
+   font-family: "PT Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: large;
+   text-align: left;
+}
+ 
+
+@media only screen and (max-width: 600px) {
+   footer {
+       justify-content: center;
+       text-align: center;
+   }
+   
+   .footer-logo .anony,
+   .footer-logo .notes {
+       text-align: left; /* Ensure text alignment to the left */
+   }
 }
 
-.footer-logo a {
-   color: white;
-}
 
 @media only screen and (max-width: 600px) {
  footer {
@@ -430,5 +439,12 @@ color: white;
    }
    .noteMaking{
       resize: auto;
+   }
+}
+
+@media only screen and (max-width: 321px) {
+   .name input{
+      width: 11rem;
+      margin-top: 20px;
    }
 }
