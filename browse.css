@@ -130,6 +130,9 @@ body {
    font-weight: 500;
 }
 
+.subheader a.active {
+   color: #ffffff;
+}
 .subheader a {
    text-decoration: none;
    color: hsl(0, 2%, 49%);
