@@ -1,15 +1,14 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+body {
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
 }
-
 
 /*header*/
 .header {
+   color: white;
    background-color: black;
-   color: rgb(255, 255, 255);
    display: flex;
    justify-content: space-between; 
    align-items: center;
@@ -19,7 +18,7 @@ body{
 
 .header a {
    text-decoration: none;
-   color: rgb(255, 255, 255);
+   color: white;
 }
 
 .header a:hover{
@@ -28,15 +27,14 @@ body{
 .header .anony {
    font-family: "Oswald", sans-serif;
    font-weight: 350;
-   font-size: 4rem;
+   font-size: 20px;
 }
 
 .header .notes {
    font-family: "PT Serif", serif;
    font-weight: 400;
    font-style: normal;
-   font-size: 4rem;
-   margin: 0;
+   font-size: 20px;
 }
 
 .header img {
@@ -175,6 +173,10 @@ body{
     margin-bottom: 1px;
 }
 
+.subheader .active {
+    color: white;
+ }
+ 
 /* Contact Elements */
 .container{
     width: 80%;
@@ -254,9 +256,11 @@ p a {
 }
 
 .wrapper header {
+    font-family: "Oswald", sans-serif;
+    font-weight: 250;
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .rating {
